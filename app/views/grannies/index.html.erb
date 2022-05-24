@@ -1,0 +1,11 @@
+<h2>Choose your granny</h2>
+
+<ul>
+<%@grannies.each do |granny| %>
+<li><%= granny.first_name %></li>
+<li><%= granny.last_name %></li>
+<li><%= granny.description %></li>
+<li><%= granny.price %></li>
+<li><%= "colocar coração" %></li>
+<%end %>
+</ul>
