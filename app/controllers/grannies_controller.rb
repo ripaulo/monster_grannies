@@ -1,9 +1,15 @@
 class GranniesController < ApplicationController
-  def index
-    @grannies = User.where(granny: true)
-  end
+  before_action :set_grannies, only: [:index, :show]
+
+  def index; end
 
   def show
-    @granny = User.find(params[:id])
+    @granny = @grannies.find(params[:id])
+  end
+
+  private
+
+  def set_grannies
+    @grannies = User.where(granny: true)
   end
 end
