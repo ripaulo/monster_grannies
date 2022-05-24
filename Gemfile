@@ -68,4 +68,6 @@ gem 'devise'
 
 gem 'faker'
 
-gem "font-awesome-rails"
+gem 'cloudinary', '~> 1.16.0'
+
+gem “font-awesome-rails”
