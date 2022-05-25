@@ -5,7 +5,7 @@ class User < ApplicationRecord
   has_many :user_bookings, :class_name => 'Booking', :foreign_key => 'user_id'
   has_many :granny_bookings, :class_name => 'Booking', :foreign_key => 'granny_id'
 
-  validates :first_name, :last_name, :birth_date, :location, :granny, presence: true
+  validates :first_name, :last_name, :birth_date, :location, presence: true
 
   validates :description, :price, presence: true, if: :granny?
 end

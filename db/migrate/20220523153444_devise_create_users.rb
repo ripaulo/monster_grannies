@@ -8,7 +8,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.1]
       t.string :last_name
       t.date :birth_date
       t.text :description
-      t.boolean :granny
+      t.boolean :granny, default: false
       t.string :location
       t.float :price
       t.string :email,              null: false, default: ""

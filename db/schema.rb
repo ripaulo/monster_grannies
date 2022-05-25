@@ -70,9 +70,9 @@ ActiveRecord::Schema.define(version: 2022_05_24_162123) do
   create_table "users", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
-    t.integer "birth_date"
+    t.date "birth_date"
     t.text "description"
-    t.boolean "granny"
+    t.boolean "granny", default: false
     t.string "location"
     t.float "price"
     t.string "email", default: "", null: false
