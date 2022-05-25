@@ -24,6 +24,8 @@
                 required: true,
                 input_html: { autocomplete: "new-password" } %>
     <%= f.input :birth_date,
+                as: :date,
+                html5: true,
                 required: true,
                 autofocus: true,
                 input_html: { autocomplete: "00-00-0000" }%>
@@ -31,18 +33,20 @@
                 required: true,
                 autofocus: true,
                 input_html: { autocomplete: "location" }%>
-      <!-- <%= f.input :granny,
+     <%= f.input :granny,
+                as: :select,
+                collection: [['Yes', true],['No', false]],
+                include_blank: false,
+                autofocus: true,
+                input_html: { autocomplete: "yes/no" }%>
+      <%#= f.input :description,
                 required: true,
                 autofocus: true,
-                input_html: { autocomplete: "yes/no" }%> -->
-      <!-- <%= f.input :description,
+                input_html: { autocomplete: "description" }%>
+      <%#= f.input :skill,
                 required: true,
                 autofocus: true,
-                input_html: { autocomplete: "description" }%> -->
-      <!-- <%= f.input :skill,
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "skills" }%> -->
+                input_html: { autocomplete: "skills" }%>
   </div>
 
   <div class="form-actions">
