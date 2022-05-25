@@ -9,6 +9,7 @@
         <li><%= granny.description %></li>
         <li><%= granny.price%>€</li>
         <li><%= (Date.today - granny.birth_date).to_i / 365 %> years young</li>
+        <%= cl_image_tag granny.photo.key %>
         <li><%= fa_icon "heart" %></li>
       </div>
     <%end %>
