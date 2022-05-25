@@ -1,2 +1,52 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+<body>
+
+  <%= render "shared/navbar" %>
+
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(https://res.cloudinary.com/monstergrannies/image/upload/v1653476044/Grannies/banner172_eln29q.jpg);">
+
+    <div class="container">
+      <h1>GRANNYUP YOUR LIFE!</h1>
+      <a class="btn-all" href="#">SEE ALL</a>
+     </div>
+  </div>
+
+<div class= "search">
+ <h2>FIND YOUR PERFECT MATCH</h2>
+
+</div>
+
+<div class= "available">
+ <h2>SOME GRANNIES AVAILABLE</h2>
+</div>
+
+<div class="skills-round">
+  <h2>SEE OUR GRANNIES SKILLS</h2>
+  <div class="col2">
+   <%= cl_image_tag("v1653478347/Grannies/clubbing150_tbtgvv.jpg", width: 200) %>
+   <p>CLUBBING</p>
+  </div>
+  <div class="col2">
+   <%= cl_image_tag("v1653478361/Grannies/velha150_ncoryx.jpg", width: 200) %>
+   <p>TALK TO</p>
+  </div>
+  <div class="col2">
+   <%= cl_image_tag("v1653473478/Grannies/senior-woman-with-fancy-style-2022-02-08-05-44-52-utc_beodpi.jpg", width: 200) %>
+   <p>COOKING</p>
+  </div>
+
+</div>
+
+<div class="banner2">
+  <%= cl_image_tag("v1653473477/Grannies/oldddddd_d5dtj5.jpg",
+      width: 400, height: 300, crop: :fill) %>
+    <div class="container">
+    <h1> ADD YOUR CRAZY SKILLS!</h1>
+    <a class="btn btn-ghost" href="#">JOIN US</a>
+  </div>
+</div>
+
+ <%= render "shared/footer" %>
+
+
+</body>
