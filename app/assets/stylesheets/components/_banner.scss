@@ -3,16 +3,16 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  padding: 300px 0;
+  padding: 293px 0;
 }
 
 .banner h1 {
   margin: 0;
   color: #000000;
-  font-size: 60px;
+  font-size: 100px;
   font-weight: bold;
   font-family: 'Anton', sans-serif;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .btn-all {
@@ -21,42 +21,50 @@
   padding: 12px 40px;
   border-radius: 50px;
   font-weight: lighter;
-  margin-left: 180px;
+  font-size: 20px;
   transition: opacity 0.3s ease;
   text-decoration: none;
 }
 
 .btn-all:hover {
-  opacity: 0.4;
-  color: #ffffff;
+  color: #EA0063;
+  background-color: #ffffff;
+  border: 2px solid #EA0063;
 }
 
 .banner2 {
   background-size: cover;
   background-position: center;
   position: relative;
-  padding: 200px 0;
+  padding: 180px 0;
 }
 
 .banner2 h1 {
   margin: 0;
   color: #000000;
-  font-size: 60px;
+  font-size: 100px;
   font-weight: bold;
-  font-family: 'Roboto Condensed', sans-serif;
   margin-left: 640px;
   margin-right: 15px;
-  margin-bottom: 50px;
+  font-family: 'Anton', sans-serif;
+  margin-bottom: 40px;
 }
 
 .btn-all2 {
-  color: #FFFFFF;
+   color: #FFFFFF;
   background-color: #EA0063;
   padding: 12px 40px;
   border-radius: 50px;
   font-weight: lighter;
-
-  margin-left: 850px;
+  font-size: 20px;
   transition: opacity 0.3s ease;
   text-decoration: none;
+  margin-left: 630px;
+}
+
+.btn-all2:hover {
+  color: #EA0063;
+  background-color: #ffffff;
+  border: 2px solid #EA0063;
+
 }

@@ -1,4 +1,8 @@
-<h1>Grandmonster</h1>
+<body>
+
+<%= render "shared/navbar" %>
+
+<h2>Grandmonster</h2>
 
 <div class='granny-card'>
   <h2><%= @granny.first_name%></h2>
@@ -11,3 +15,6 @@
 
 <%= link_to "Back for more fabulosity", grannies_path %>
 <%= link_to "Book this grandmonster", new_granny_booking_path(@granny) %>
+
+<%= render "shared/footer" %>
+</body>
