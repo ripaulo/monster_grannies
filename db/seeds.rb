@@ -10,7 +10,7 @@ puts 'Destroy db of granies...'
 
 User.destroy_all
 
-# Create Granny seeds
+#Create Granny seeds
 
 user1 = User.create(email: Faker::Internet.email, password: "123456", first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, location: 'Lisboa', birth_date: Date.new(1948,2,3), granny:true, description:"Super awsome, burlesque granny!", price: 19.4 )
 user2 = User.create(email: Faker::Internet.email, password: "123456", first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, location: 'Lisboa', birth_date: Date.new(1944,2,3), granny:true, description:"Go clubbing with this super cool granny", price: 20.5)
