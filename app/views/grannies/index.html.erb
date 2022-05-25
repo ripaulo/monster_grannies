@@ -1,13 +1,16 @@
 <div><h2>Choose your granny</h2></div>
 
-<div class='card'>
 <ul>
-<%@grannies.each do |granny| %>
-<li><%= granny.first_name %></li>
-<li><%= granny.last_name %></li>
-<li><%= granny.description %></li>
-<li><%= granny.price %></li>
-<li><%= fa_icon "heart" %></li>
-<%end %>
+  <%@grannies.each do |granny| %>
+    <%= link_to granny_path(granny) do %>
+      <div class='card'>
+        <li><%= granny.first_name %></li>
+        <li><%= granny.last_name %></li>
+        <li><%= granny.description %></li>
+        <li><%= granny.price%>€</li>
+        <li><%= (Date.today - granny.birth_date).to_i / 365 %> years young</li>
+        <li><%= fa_icon "heart" %></li>
+      </div>
+    <%end %>
+  <%end %>
 </ul>
-</div>
