@@ -13,38 +13,47 @@
 
 <div class= "search">
  <h2>FIND YOUR PERFECT MATCH</h2>
+ <form novalidate="novalidate" class="simple_form search" action="/" accept-charset="UTF-8" method="get">
+  <div class="search-form-control form-group">
+    <input class="form-control string required" type="text" name="search[query]" id="search_query" />
+    <button name="button" type="submit" class="btn btn-flat">
+      <i class="fas fa-search"></i> Search
+    </button>
+  </div>
+</form>
 
 </div>
 
 <div class= "available">
  <h2>SOME GRANNIES AVAILABLE</h2>
+
 </div>
 
+
+
+<h2>SEE OUR GRANNIES SKILLS</h2>
 <div class="skills-round">
-  <h2>SEE OUR GRANNIES SKILLS</h2>
-  <div class="col2">
-   <%= cl_image_tag("v1653478347/Grannies/clubbing150_tbtgvv.jpg", width: 200) %>
-   <p>CLUBBING</p>
-  </div>
-  <div class="col2">
-   <%= cl_image_tag("v1653478361/Grannies/velha150_ncoryx.jpg", width: 200) %>
-   <p>TALK TO</p>
-  </div>
-  <div class="col2">
-   <%= cl_image_tag("v1653473478/Grannies/senior-woman-with-fancy-style-2022-02-08-05-44-52-utc_beodpi.jpg", width: 200) %>
-   <p>COOKING</p>
+
+  <div class="card-category col-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/monstergrannies/image/upload/v1653478347/Grannies/clubbing150_tbtgvv.jpg)">
+    CLUBBING
   </div>
 
+  <div class="card-category col-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/monstergrannies/image/upload/v1653478361/Grannies/velha150_ncoryx.jpg)">
+    TALK TO
+  </div>
+
+  <div class="card-category col-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/monstergrannies/image/upload/v1653473478/Grannies/senior-woman-with-fancy-style-2022-02-08-05-44-52-utc_beodpi.jpg)">
+    COOKING
+  </div>
 </div>
 
-<div class="banner2">
-  <%= cl_image_tag("v1653473477/Grannies/oldddddd_d5dtj5.jpg",
-      width: 400, height: 300, crop: :fill) %>
+<div class="banner2" style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(https://res.cloudinary.com/monstergrannies/image/upload/v1653473477/Grannies/oldddddd_d5dtj5.jpg);">
+
     <div class="container">
-    <h1> ADD YOUR CRAZY SKILLS!</h1>
-    <a class="btn btn-ghost" href="#">JOIN US</a>
+      <h1>ADD YOUR CRAZY SKILLS!</h1>
+      <a class="btn-all2" href="#">JOIN US</a>
+     </div>
   </div>
-</div>
 
  <%= render "shared/footer" %>
 

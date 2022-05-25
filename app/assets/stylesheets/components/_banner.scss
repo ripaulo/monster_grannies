@@ -9,18 +9,19 @@
 .banner h1 {
   margin: 0;
   color: #000000;
-  font-size: 45px;
+  font-size: 60px;
   font-weight: bold;
   font-family: 'Roboto Condensed', sans-serif;
+  margin-bottom: 30px;
 }
 
 .btn-all {
   color: #FFFFFF;
   background-color: #EA0063;
-  padding: 8px 24px;
+  padding: 12px 40px;
   border-radius: 50px;
   font-weight: lighter;
-
+  margin-left: 180px;
   transition: opacity 0.3s ease;
   text-decoration: none;
 }
@@ -28,4 +29,33 @@
 .btn-all:hover {
   opacity: 0.4;
   color: #ffffff;
+}
+
+.banner2 {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 250px 0;
+}
+
+.banner2 h1 {
+  margin: 0;
+  color: #000000;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-left: 610px;
+  margin-bottom: 70px;
+}
+
+.btn-all2 {
+  color: #FFFFFF;
+  background-color: #EA0063;
+  padding: 12px 40px;
+  border-radius: 50px;
+  font-weight: lighter;
+  margin-right: 10px;
+  margin-left: 850px;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
 }
