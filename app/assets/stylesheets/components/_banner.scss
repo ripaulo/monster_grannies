@@ -1,0 +1,31 @@
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 350px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: #000000;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.btn-all {
+  color: #FFFFFF;
+  background-color: #EA0063;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-all:hover {
+  opacity: 0.4;
+  color: #ffffff;
+}
