@@ -1,24 +1,37 @@
 // Specific CSS for your home-page
 .available{
   background-color: #D9D9D9;
-}
-
-h2{
-  padding-left: 30%;
-
+  padding: 100px 0;
 }
 
 .skills-round{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
+  justify-content: center;
+  padding-left: 150px;
+  padding-bottom: 30px;;
 
-  padding-left: 200px;
-
-}
 
 .card-category{
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
+  box-shadow: 1px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: center;
+}
+}
+
+
+.card-category p{
+  font-size: 45px;
+  margin-top: 100px;
+  margin-left: 50px;
+  font-family: 'Anton', sans-serif;
+}
+
+.card{
+  padding: 50px 20;
 }
