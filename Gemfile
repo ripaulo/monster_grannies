@@ -69,3 +69,5 @@ gem 'devise'
 gem 'faker'
 
 gem 'cloudinary', '~> 1.16.0'
+
+gem 'pundit'
