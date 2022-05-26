@@ -1,8 +1,11 @@
+<div>GrannyMonster Lover Profile</div>
+
 <div>My bookings</div>
 
 <%@bookings.each do |booking| %>
   <div class='para'>
     <p><%=booking.start_date %></p>
     <p><%=booking.end_date %></p>
+    <p> With <%= booking.granny.name %></p>
+  <%end %>
   </div>
-<%end %>

@@ -9,4 +9,7 @@ class User < ApplicationRecord
   validates :first_name, :last_name, :birth_date, :location, presence: true
 
   validates :description, :price, presence: true, if: :granny?
+  def name
+    "#{first_name} #{last_name}"
+  end
 end
