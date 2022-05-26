@@ -1,24 +1,21 @@
-<body>
-
-
-
-<div><h2>Choose your granny</h2></div>
-
-<ul>
-  <%@grannies.each do |granny| %>
-    <%= link_to granny_path(granny) do %>
-      <div class='card'>
-        <%= cl_image_tag granny.photo.key %>
-        <li><%= granny.first_name %></li>
-        <li><%= granny.last_name %></li>
-        <li><%= granny.description %></li>
-        <li><%= granny.price%>€</li>
-        <li><%= granny.location%></li>
-        <li><%= (Date.today - granny.birth_date).to_i / 365 %> years young</li>
+<div class="container">
+  <div class="row">
+    <%@grannies.each do |granny| %>
+      <div class="col-4">
+      <%= link_to granny_path(granny) do %>
+        <div class='card' style="width: 18rem;">
+          <%= cl_image_tag granny.photo.key %>
+          <div class="card-body">
+            <p><%= granny.first_name + " " + granny.last_name %></p>
+            <p><%= granny.description %></p>
+            <p>€<%= granny.price%></p>
+            <p><%= granny.location%></p>
+            <p><%= (Date.today - granny.birth_date).to_i / 365 %> years young</p>
+            <p><%#= link_to "Bookings", root_path %></p>
+          </div>
+        </div>
+      <%end %>
       </div>
     <%end %>
-  <%end %>
-</ul>
-
-
-</body>
+  </div>
+</div>
