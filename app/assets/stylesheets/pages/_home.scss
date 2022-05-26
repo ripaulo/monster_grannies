@@ -3,13 +3,22 @@
   background-color: #D9D9D9;
 }
 
+h2{
+  padding-left: 30%;
+
+}
+
 .skills-round{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
+
+  padding-left: 200px;
+
 }
 
 .card-category{
-  max-width: 500px;
-  max-height: 400px;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
 }
