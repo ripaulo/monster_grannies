@@ -11,7 +11,7 @@
             <p>€<%= granny.price%></p>
             <p><%= granny.location%></p>
             <p><%= (Date.today - granny.birth_date).to_i / 365 %> years young</p>
-            <p><%= link_to "Bookings", user_bookings_path %></p>
+            <%= link_to "Book", new_granny_booking_path(granny) %>
           </div>
         </div>
       <%end %>
