@@ -18,6 +18,7 @@ user1 = User.create(email: Faker::Internet.email, password: "123456", first_name
 file1 = URI.open('https://res.cloudinary.com/monstergrannies/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1653488572/grannie%20seeds/hi-everyone-this-is-my-grandmother-84-years-old-2022-03-05-05-19-47-utc_nuqznh.jpg')
 user1.photo.attach(io: file1, filename: 'file1.jpg', content_type: 'image/jpg')
 
+
 user2 = User.create(email: Faker::Internet.email, password: "123456", first_name: Faker::Name.female_first_name, last_name: Faker::Name.last_name, location: 'Lisboa', birth_date: Date.new(1944,2,3), granny:true, description:"Go clubbing with this super cool granny", price: 20.5)
 file2 = URI.open('https://res.cloudinary.com/monstergrannies/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1653488319/grannie%20seeds/funny-portraits-with-old-grandmother-2022-02-03-11-46-06-utc_ydbab2.jpg')
 user2.photo.attach(io: file2, filename: 'file2.jpg', content_type: 'image/jpg')
