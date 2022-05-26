@@ -50,10 +50,8 @@ input[type=text]{
   border: none;
   border-radius: 5px;
   background-color: #D9D9D9;
-
   transition: width 0.4s ease;
   outline: none;
-
   &:focus{ width: 300px; }
 }
 
