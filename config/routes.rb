@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   resources :grannies do
     resources :bookings, only: [ :new, :create ]
   end
+  resources :users do
+    resources :bookings, only: :index
+  end
 end
