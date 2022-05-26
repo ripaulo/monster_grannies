@@ -10,37 +10,30 @@
                 input_html: { autocomplete: "first name" }%>
     <%= f.input :last_name,
                 required: true,
-                autofocus: true,
                 input_html: { autocomplete: "last name" }%>
     <%= f.input :email,
                 required: true,
-                autofocus: true,
                 input_html: { autocomplete: "email" }%>
     <%= f.input :photo, as: :file %>
     <%= f.input :birth_date,
                 as: :date,
                 html5: true,
                 required: true,
-                autofocus: true,
                 input_html: { autocomplete: "00-00-0000" }%>
      <%= f.input :location,
                 required: true,
-                autofocus: true,
                 input_html: { autocomplete: "location" }%>
      <%= f.input :granny,
                 as: :select,
                 collection: [['Yes', true],['No', false]],
                 include_blank: false,
-                autofocus: true,
                 input_html: { autocomplete: "yes/no" }%>
-      <%#= f.input :description,
+      <%= f.input :description,
                 required: true,
-                autofocus: true,
                 input_html: { autocomplete: "description" }%>
-      <%#= f.input :skill,
+      <%= f.input :price,
                 required: true,
-                autofocus: true,
-                input_html: { autocomplete: "skills" }%>
+                input_html: { autocomplete: "price" }%>
     <%= f.input :password,
                 required: true,
                 hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
