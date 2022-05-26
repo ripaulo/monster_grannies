@@ -10,7 +10,7 @@ class BookingsController < ApplicationController
     @granny = User.find(params[:granny_id])
     @booking.granny = @granny
     if @booking.save
-      redirect_to granny_path(granny)
+      redirect_to granny_path(@granny)
     else
       render :new
     end
