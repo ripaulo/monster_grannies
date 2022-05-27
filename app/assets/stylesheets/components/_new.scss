@@ -13,7 +13,7 @@
 }
 
 .form-actions{
-
+color: white;
   background-color: #EA0063;
   padding: 10px 70px;
   border-radius: 50px;
@@ -28,6 +28,7 @@
   color: #EA0063;
   background-color: #ffffff;
   border: 2px solid #EA0063;
+
 }
 
 input.btn {
@@ -35,17 +36,12 @@ input.btn {
   font-size: 17px;
   margin-right: 200px;
   margin-left: -40px;
-
 }
-
-.form-inputs {
-  width: 53%;
-  border: 1px #EA0063;
-  margin-left: 24%;
-
+input.btn:hover{
+  color: #EA0063;
+  background-color: #ffffff;
+  border: 2px solid #EA0063;
 }
-
-
 
 .new_user a {
   margin-top: 40px;
