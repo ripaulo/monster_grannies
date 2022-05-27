@@ -1,5 +1,6 @@
-
+<div class="background" style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(https://res.cloudinary.com/monstergrannies/image/upload/v1653511008/Grannies/banner2_lyoots.jpg);">
 <h2 class="text-center">LOG IN</h2>
+
 <div class="containernew">
   <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="form-inputs">
@@ -16,8 +17,8 @@
     <div class="form-actions">
       <%= f.button :submit, "LOG IN"  %>
     </div>
-
+     <%= render "devise/shared/links" %>
   <% end %>
 </div>
-
-<%= render "devise/shared/links" %>
+</div>
+</div>
