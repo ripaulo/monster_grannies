@@ -1,5 +1,7 @@
-<h2>Book your Grandmonster</h2>
 
+
+<div class="containernew">
+<h2 class="text-center">BOOK YOUR GRANDMOSTER</h2>
 <div class='granny-card'>
   <%= cl_image_tag @granny.photo.key %>
   <h2><%= @granny.first_name%></h2>
@@ -9,8 +11,10 @@
   <h2><%= (Date.today - @granny.birth_date).to_i / 365 %> years young</h2>
 </div>
 
+
 <%= simple_form_for [@granny, @booking],url:granny_bookings_path(@granny) do |f| %>
   <%= f.input :start_date %>
   <%= f.input :end_date %>
   <%= f.submit %>
 <% end %>
+</div>
