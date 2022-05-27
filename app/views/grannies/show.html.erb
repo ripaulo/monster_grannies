@@ -1,21 +1,21 @@
-<body>
+<div class='granny-container'>
+
+  <h1>The chosen Grandmonster</h1>
+
+  <div class='granny-card'>
+    <%= cl_image_tag @granny.photo.key %>
+      <div class='card-details'>
+        <h3><%= @granny.first_name%></h3>
+        <h3><%= @granny.last_name%></h3>
+        <h3><%= @granny.description%></h3>
+        <h3><%= @granny.price%> €</h3>
+        <h3><%= @granny.location%></h3>
+        <h3><%= (Date.today - @granny.birth_date).to_i / 365 %> years young</h3>
+      </div>
+      <%= link_to "Back for more fabulosity", grannies_path, class: "btn-all" %>
+  <%= link_to "Book this grandmonster", new_granny_booking_path(@granny), class: "btn-all" %>
+  </div>
 
 
 
-<h2>Grandmonster</h2>
-
-<div class='granny-card'>
-  <%= cl_image_tag @granny.photo.key %>
-  <h3><%= @granny.first_name%></h3>
-  <h3><%= @granny.last_name%></h3>
-  <h3><%= @granny.description%></h3>
-  <h3><%= @granny.price%> €</h3>
-  <h3><%= @granny.location%></h3>
-  <h3><%= (Date.today - @granny.birth_date).to_i / 365 %> years young</h3>
 </div>
-
-<%= link_to "Back for more fabulosity", grannies_path %>
-<%= link_to "Book this grandmonster", new_granny_booking_path(@granny) %>
-
-
-</body>

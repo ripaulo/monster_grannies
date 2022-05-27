@@ -4,14 +4,14 @@
       <div class="col-4">
       <%= link_to granny_path(granny) do %>
         <div class='card' style="width: 18rem;">
-          <%= cl_image_tag granny.photo.key %>
-          <div class="card-body">
-            <p><%= granny.first_name + " " + granny.last_name %></p>
+          <div class="card-body card-results">
+            <%= cl_image_tag granny.photo.key %>
+            <p><%= "#{granny.first_name} #{granny.last_name}" %></p>
             <p><%= granny.description %></p>
             <p>€<%= granny.price%></p>
             <p><%= granny.location%></p>
             <p><%= (Date.today - granny.birth_date).to_i / 365 %> years young</p>
-            <%= link_to "Book", new_granny_booking_path(granny) %>
+            <%= link_to "Book", new_granny_booking_path(granny), class: "btn-all" %>
           </div>
         </div>
       <%end %>

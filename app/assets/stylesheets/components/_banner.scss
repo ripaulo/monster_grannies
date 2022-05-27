@@ -15,7 +15,7 @@
   text-shadow: 2px 2px #ff0000;
 }
 
-.btn-all {
+.btn-all, .btn {
   color: #FFFFFF;
   background-color: #EA0063;
   padding: 12px 40px;
@@ -24,10 +24,9 @@
   font-size: 20px;
   transition: opacity 0.3s ease;
   text-decoration: none;
-
 }
 
-.btn-all:hover {
+.btn-all:hover, .btn:hover {
   color: #EA0063;
   background-color: #ffffff;
   border: 2px solid #EA0063;
@@ -70,4 +69,9 @@
   background-color: #ffffff;
   border: 2px solid #EA0063;
 
+}
+
+.form-inputs {
+  padding-left: 100px;
+  padding-right: 100px;
 }
