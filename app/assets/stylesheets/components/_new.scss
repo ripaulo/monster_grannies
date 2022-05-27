@@ -1,16 +1,21 @@
+.background{
+  padding: 100px 0;
+}
+
 .containernew{
   background-color: #eca0c0;
   border: 2px solid #EA0063;
   width: 35%;
-  padding: 100px 0;
+  padding: 15px 0;
   margin-left: 35%;
+
 
 }
 
 .form-actions{
 
   background-color: #EA0063;
-  padding: 12px 60px;
+  padding: 10px 70px;
   border-radius: 50px;
   font-weight: lighter;
   transition: opacity 0.3s ease;
@@ -27,7 +32,7 @@
 
 input.btn {
   color: white;
-  font-size: 20px;
+  font-size: 17px;
   margin-right: 200px;
   margin-left: -40px;
 
@@ -40,6 +45,12 @@ input.btn {
 
 }
 
-.new_user a{
+
+
+.new_user a {
   margin-top: 40px;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  margin-left: 40px;
 }
