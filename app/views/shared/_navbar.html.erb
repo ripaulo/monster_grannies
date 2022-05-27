@@ -8,7 +8,14 @@
     </button>
 
     <div class="teste ">
-          <input placeholder='Search...' class='js-search' type="text">
+      <%= form_tag grannies_path, method: :get do %>
+        <%= text_field_tag :query,
+          params[:query],
+          class: "js-search",
+          placeholder: "Search..."%>
+        <%#= submit_tag "Search", class: "btn btn-primary" %>
+      <% end %>
+      <%# <input placeholder='Search...' class='js-search' type="text"> %>
           <i class="fa fa-search"></i>
     </div>
 

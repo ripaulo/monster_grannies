@@ -1,12 +1,13 @@
-<div>GrannyMonster Lover Profile</div>
+<h2>GrannyMonster Lover Profile</h2>
+<h3 class="text-center">MY BOOKINGS</h3>
 
-<div>My bookings</div>
-
+<div class='booking-card'>
 <%@bookings.each do |booking| %>
-  <div class='para'>
-    <p><%=booking.start_date %></p>
-    <p><%=booking.end_date %></p>
+  <div class='booking-div'>
+    <p><%= "From: #{booking.start_date} To: #{booking.end_date}"%></p>
     <p><%=booking.granny.description %></p>
     <p> With <%= booking.granny.name %></p>
-  <%end %>
+    <%= link_to 'Delete booking', booking, method: :delete, data: { confirm: 'Are you sure?' }%>
   </div>
+  <%end %>
+</div>
