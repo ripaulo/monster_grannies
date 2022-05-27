@@ -8,5 +8,6 @@
     <p><%=booking.end_date %></p>
     <p><%=booking.granny.description %></p>
     <p> With <%= booking.granny.name %></p>
+    <%= link_to 'Delete booking', booking, method: :delete, data: { confirm: 'Are you sure?' }%>
   <%end %>
   </div>
