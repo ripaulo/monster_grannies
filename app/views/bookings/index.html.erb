@@ -1,13 +1,16 @@
 <h2>GrannyMonster Lover Profile</h2>
 <h3 class="text-center">MY BOOKINGS</h3>
-
+<div class="containernew">
 <div class='booking-card'>
 <%@bookings.each do |booking| %>
   <div class='booking-div'>
     <p><%= "From: #{booking.start_date} To: #{booking.end_date}"%></p>
     <p><%=booking.granny.description %></p>
     <p> With <%= booking.granny.name %></p>
-    <%= link_to 'Delete booking', booking, method: :delete, data: { confirm: 'Are you sure?' }%>
+
+    <%= link_to 'Delete booking', booking, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn-all" %>
+   </div>
   </div>
   <%end %>
+</div>
 </div>
