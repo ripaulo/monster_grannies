@@ -18,6 +18,19 @@
   width: 250px;
   border-radius: 50%;
   object-position: 30% 30%;
+  box-shadow:8px 8px 5px rgb(204, 201, 201);
+  display: inline-block;
+  border: none;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+}
+
+.card-category:hover{
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+   transition: all 0.4s ease 0s;
 }
 
 p{

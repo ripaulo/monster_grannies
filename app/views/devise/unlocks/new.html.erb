@@ -1,6 +1,7 @@
 <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(https://res.cloudinary.com/monstergrannies/image/upload/v1653511008/Grannies/banner2_lyoots.jpg);">
-<h2 class="text-center">Resend unlock instructions</h2>
+
  <div class="containernew">
+ <h2 class="text-center">Resend unlock instructions</h2>
   <%= simple_form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>
     <%= f.error_notification %>
     <%= f.full_error :unlock_token %>
