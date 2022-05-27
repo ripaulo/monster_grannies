@@ -3,7 +3,7 @@
     <%@grannies.each do |granny| %>
       <div class="col-4">
       <%= link_to granny_path(granny) do %>
-        <div class='card' style="width: 18rem;">
+        <div class='card'>
           <div class="card-body card-results">
             <%= cl_image_tag granny.photo.key %>
             <p><%= "#{granny.first_name} #{granny.last_name}" %></p>
