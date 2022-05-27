@@ -3,13 +3,13 @@
 }
 
 .containernew{
-  background-color: #eca0c0;
-  border: 2px solid #EA0063;
+  background-color: #c9c9c9;
+  opacity: 0.9;
   width: 35%;
   padding: 15px 0;
   margin-left: 35%;
-
-
+  margin-bottom: 15%;
+  border-radius: 10px;
 }
 
 .form-actions{
@@ -49,4 +49,9 @@ input.btn:hover{
   text-decoration: none;
   color: black;
   margin-left: 40px;
+}
+
+p .links-update{
+  text-decoration: none;
+  color:black;
 }

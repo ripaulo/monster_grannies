@@ -1,23 +1,25 @@
-<h2>Update your information</h2>
+<div class="background" style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(https://res.cloudinary.com/monstergrannies/image/upload/v1653511008/Grannies/banner2_lyoots.jpg);">
 
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= f.error_notification %>
+  <div class="containernew">
+  <h2 class="text-center">UPDATE YOUR INFORMATION</h2>
+  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+    <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.input :email, required: true, autofocus: true %>
+    <div class="form-inputs">
+      <%= f.input :email, required: true, autofocus: true %>
 
-    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-      <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
-    <% end %>
-    <%=f.input :first_name,
+      <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+        <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
+      <% end %>
+      <%=f.input :first_name,
                 autofocus: true,
                 input_html: { autocomplete: "first name" }%>
-    <%= f.input :last_name,
+      <%= f.input :last_name,
                 input_html: { autocomplete: "last name" }%>
-    <%= f.input :photo, as: :file %>
-     <%= f.input :location,
+      <%= f.input :photo, as: :file %>
+      <%= f.input :location,
                 input_html: { autocomplete: "location" }%>
-     <%= f.input :granny,
+      <%= f.input :granny,
                 as: :select,
                 collection: [['Yes', true],['No', false]],
                 include_blank: false,
@@ -30,21 +32,24 @@
                 hint: "leave it blank if you don't want to change it",
                 required: false,
                 input_html: { autocomplete: "new-password" } %>
-    <%= f.input :password_confirmation,
+      <%= f.input :password_confirmation,
                 required: false,
                 input_html: { autocomplete: "new-password" } %>
-    <%= f.input :current_password,
+      <%= f.input :current_password,
                 hint: "we need your current password to confirm your changes",
                 required: true,
                 input_html: { autocomplete: "current-password" } %>
-  </div>
+    </div>
 
   <div class="form-actions">
     <%= f.button :submit, "Update" %>
   </div>
 <% end %>
 
+<div class="links-update">
+<p><%= link_to "Unhappy? Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
 
-<p><%= link_to "Unhappy? Cancel my account", registration_path(resource_name), class: "btn-all", data: { confirm: "Are you sure?" }, method: :delete %></p>
-
-<%= link_to "Get Back", :back, class: "btn-all" %>
+<p ><%= link_to "Get Back", :back %></p>
+</div>
+</div>
+</div>
