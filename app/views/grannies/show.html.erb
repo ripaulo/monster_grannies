@@ -1,21 +1,26 @@
-<div class='granny-container'>
-
-  <h2 class="text-center">The chosen Grandmonster</h1>
-
-  <div class='granny-card'>
-    <%= cl_image_tag @granny.photo.key %>
-      <div class='card-details'>
-        <h3><%= @granny.first_name%></h3>
-        <h3><%= @granny.last_name%></h3>
-        <h3><%= @granny.description%></h3>
-        <h3><%= @granny.price%> €</h3>
+<div class='container mt-5'>
+  <h1>The chosen Grandmonster</h1>
+  <div class='granny-card d-flex'>
+    <div class="col-4 d-flex justify-content-center old" >
+      <%= cl_image_tag @granny.photo.key, width: 300 %>
+    </div>
+    <div class="col-8">
+      <div class='card-details '>
+        <h2><%= "#{@granny.first_name} #{@granny.last_name}" %></h2>
+        <h3 class="py-2"><%= @granny.description%></h3>
+        <div class="d-flex justify-content-between">
         <h3><%= @granny.location%></h3>
+        </div>
+        <div class="d-flex justify-content-between">
         <h3><%= (Date.today - @granny.birth_date).to_i / 365 %> years young</h3>
+        </div>
+        <div class="d-flex justify-content-between">
+        <h3> <strong> <%= @granny.price%> € </strong></h3>
       </div>
-      <%= link_to "Back for more fabulosity", grannies_path, class: "btn-all" %>
-  <%= link_to "Book this grandmonster", new_granny_booking_path(@granny), class: "btn-all" %>
+      <div class="d-flex justify-content-between mt-3">
+        <%= link_to "Book this grandmonster", new_granny_booking_path(@granny), class: "btn-all" %>
+        <%= link_to "Back for more fabulosity", grannies_path, class: "btn-all" %>
+      </div>
+    </div>
   </div>
-
-
-
 </div>
