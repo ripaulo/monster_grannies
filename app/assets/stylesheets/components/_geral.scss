@@ -1,6 +1,6 @@
 h2{
   margin: 0;
-  color: #ffffff;
+  color: white;
   font-size: 60px;
   font-weight: bold;
   font-family: 'Anton', sans-serif;
@@ -11,4 +11,10 @@ h2{
 
 a{
   color: white;
+}
+
+h3{
+  color: rgb(64, 58, 58);
+  text-shadow: 2px 2px white;
+  margin-left: 10%;
 }

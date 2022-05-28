@@ -25,7 +25,11 @@
         <% if user_signed_in? %>
           <li class="nav-item active">
             <%= link_to "Grannies", grannies_path, class: "nav-link" %>
-            </li>
+          </li>
+
+          <li class="nav-item active">
+              <%= link_to "Add a grannie", grannies_path, class: "nav-link" %>
+          </li>
 
           <li class="nav-item dropdown">
             <%= image_tag "https://res.cloudinary.com/monstergrannies/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1653661829/users%20photos/220504_Le_Wagon_116-X2_afodb1.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
@@ -37,11 +41,14 @@
           </li>
         <% else %>
           <li class="nav-item"-->
-          <li class="nav-item active">
-            <%= link_to "Grannies", grannies_path, class: "nav-link" %>
-          </li>
-            <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-            <%= link_to "SignUp", new_user_registration_path, class: "nav-link" %>
+            <li class="nav-item active">
+              <%= link_to "Grannies", grannies_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item active">
+              <%= link_to "Add a grannie", grannies_path, class: "nav-link" %>
+            </li>
+              <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+              <%= link_to "SignUp", new_user_registration_path, class: "nav-link" %>
           </li-->
         <% end %>
       </ul>
